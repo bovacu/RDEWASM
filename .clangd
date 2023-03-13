@@ -1,0 +1,8 @@
+CompileFlags: # Tweak the parse settings
+  Add: 
+    - "--include-directory=/Users/macmini/Documents/RDE/vcpkg/installed/x64-osx/include"
+    - "--include-directory=/Users/macmini/Documents/RDE/vcpkg/installed/x64-osx/include/SDL2"
+    - "--include-directory=/Users/macmini/Documents/WASMTest/modules/imgui"
+    - "--include-directory=/Users/macmini/Documents/WASMTest/modules/Chipmunk2D/include/"
+    - "--include-directory=/Users/macmini/Documents/RDE/engine/include/"
+    - "-std=c++17"
