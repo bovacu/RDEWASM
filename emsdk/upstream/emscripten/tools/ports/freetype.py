@@ -14,8 +14,7 @@ def needed(settings):
 
 
 def get(ports, settings, shared):
-  # ports.fetch_project('freetype', f'https://download.savannah.gnu.org/releases/freetype/freetype-2.12.0.tar.gz', sha512hash=HASH)
-  pass
+  ports.fetch_project('freetype', f'https://download.savannah.gnu.org/releases/freetype/freetype-2.12.0.tar.gz', sha512hash=HASH)
 
   def create(final):
     source_path = os.path.join(ports.get_dir(), 'freetype', 'freetype-2.12.0')
