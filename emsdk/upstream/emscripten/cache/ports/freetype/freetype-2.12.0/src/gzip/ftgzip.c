@@ -25,8 +25,7 @@
 #include <freetype/internal/ftdebug.h>
 #include <freetype/ftgzip.h>
 #include FT_CONFIG_STANDARD_LIBRARY_H
-
-
+#define FT_CONFIG_OPTION_SYSTEM_ZLIB
 #include <freetype/ftmoderr.h>
 
 #undef FTERRORS_H_
