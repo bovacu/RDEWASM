@@ -11,10 +11,12 @@ emcc  modules/imgui/imgui.cpp modules/imgui/imgui_draw.cpp modules/imgui/imgui_t
       -s USE_FREETYPE=1 \
       -s USE_WEBGL2=1 \
       -s FULL_ES3=1 \
+      -s ALLOW_MEMORY_GROWTH=1 \
       -I/Users/macmini/Documents/RDE/vcpkg/installed/x64-osx/include/ \
       -I/Users/macmini/Documents/RDEWASM/modules/imgui  \
       -I/Users/macmini/Documents/RDEWASM/modules/Chipmunk2D/include  \
       -I/Users/macmini/Documents/RDE/engine/include  \
-      --preload-file wasmAssets \
+      --preload-file assets \
+      --preload-file defaultAssets \
       -o RDE.html \
       && emrun RDE.html --no_browser
